@@ -1,0 +1,58 @@
+body {
+  overflow-x: hidden;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h4 {
+  @include media-breakpoint-down(md) {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  color: #363B48;
+  line-height: 1.5;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+.logo {
+  font-family: 'Kenia', cursive;
+  &__icon {
+    font-size: 0.5rem;
+  }
+}
+
+.main {
+  min-height: calc(100vh - 189px);
+  @include media-breakpoint-down(lg) {
+    min-height: calc(100vh - 230px);
+  }
+}
+
+.height--vh {
+  height: 100vh;
+}
+
+/* 更改 bootstrap 現有 CSS */
+.btn {
+  &-primary {
+    color: white;
+  }
+  &:disabled {
+    pointer-events: auto;
+    cursor: not-allowed;
+  }
+}
+
+
